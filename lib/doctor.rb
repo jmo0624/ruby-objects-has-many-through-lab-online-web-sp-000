@@ -9,11 +9,11 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.select {|appointment| appointments.doctor == self}
+    Appointment.all.select {|appointment| appointment.doctor == self}
   end
 
   def patients
-    appointments.map {|appointment| appointments.patient}
+    appointments.map {|appointment| appointment.patient}
   end
 
   def self.all
