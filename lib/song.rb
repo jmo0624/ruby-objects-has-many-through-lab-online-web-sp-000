@@ -14,4 +14,4 @@ class Song
     @artist = artist
     @@all << self
   end
-  
+end
