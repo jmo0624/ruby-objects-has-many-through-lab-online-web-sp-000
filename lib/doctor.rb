@@ -8,4 +8,7 @@ class Doctor
     @@all
   end
   
-  def initialize
+  def initialize(name)
+    @name = name
+    @@all << self
+    
