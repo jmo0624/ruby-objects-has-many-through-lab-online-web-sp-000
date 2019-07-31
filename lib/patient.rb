@@ -22,4 +22,4 @@ class Patient
   end
   
   def doctors
-    
+    appointments.collect {
